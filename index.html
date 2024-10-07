@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Culture of USA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+<!-- navbar -->
+<div class="sidebar">
+    <div class="logo-details">
+      <i class='fa fa-bars'></i>
+        <!-- <div class="logo_name">USA's culture </div> -->
+        <i class='fa fa-bars' id="btn" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFNAVsJC1Y70f5j6ZNEyKniy-lLrzRBr8gCwz5AvJ87tGDSA1z9Z0Ds69IQb9aILHy86s&usqp=CAU" style="width: 35px; height: 35px;"></i>
+    </div><br><br><br>
+    <ul class="nav-list">
+      <li>
+        <a href="#hero">
+          <i class='bx bx-grid-alt'><img src="https://e7.pngegg.com/pngimages/370/221/png-clipart-black-house-art-one-line-home-icon-icons-logos-emojis-home-icons.png" alt=""></i> 
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="#about">
+         <i class='bx bx-user' ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTliFlndrX2ki02woitY2fsIXOu1mt189GzFQ&s" ></i>
+         <span class="links_name">About</span>
+       </a>
+       <span class="tooltip">About</span>
+     </li>
+     <li>
+       <a href="#food">
+         <i class='bx bx-chat'><img src="https://static.vecteezy.com/system/resources/previews/010/352/246/non_2x/pizza-slice-with-melting-cheese-doodle-hand-drawn-illustration-vector.jpg" alt=""></i>
+         <span class="links_name">Foods of USA</span>
+       </a>
+       <span class="tooltip">Foods of USA</span>
+     </li>
+     <li>
+       <a href="#problem">
+         <i class='bx bx-pie-chart-alt-2' > <img src="https://banner2.cleanpng.com/20180615/tkx/aa7kvwphq.webp" alt=""></i>
+         <span class="links_name">Problems Faced</span>
+       </a>
+       <span class="tooltip">Problems Faced</span>
+     </li>
+     <li>
+       <a href="#solution">
+         <i class='bx bx-folder' ><img src="https://previews.123rf.com/images/petersnow/petersnow1806/petersnow180600006/102331196-emoticon-character-head-having-an-idea-with-a-lightbulb-above-his-head-vector-illustration-with.jpg" alt=""></i>
+         <span class="links_name">Solutions</span>
+       </a>
+       <span class="tooltip">Solutions</span>
+     </li>
+     <li>
+       <a href="#quiz">
+         <i class='bx bx-cart-alt' ><img src="https://static.vecteezy.com/system/resources/thumbnails/018/766/186/small_2x/quiz-guess-social-media-icon-in-flat-style-faq-illustration-on-isolated-background-help-button-sign-business-concept-vector.jpg" alt=""></i>
+         <span class="links_name">Quiz</span>
+       </a>
+       <span class="tooltip">Quiz</span>
+     </li>
+     
+    </ul>
+  </div>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+  
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+
+
+<!-- Home page -->
+    <section id="hero" style="height: 100vh; background-attachment: fixed; padding-left: 50px;">
+      <div class="welcome-text" style="background-color: #3A6D8C; height: 120px; color: black; opacity: 0.8;">
+        <h1 style="color: white; margin-top: 25px; opacity: 0.9;">USA's Culture</h1>
+    </div>
+      </section>
+
+      <style>
+        .welcome-text {
+          position: absolute;
+          width: 600px;
+          height: 300px;
+          margin: 20% 30%;
+          text-align: center;
+        }
+        .welcome-text h1 {
+          text-align: center;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 60px;
+        }
+        .welcome-text h1 span {
+          color: #00fecb;
+        }
+        .welcome-text a {
+          border: 1px solid #fff;
+          padding: 10px 25px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 14px;
+          margin-top: 20px;
+          display: inline-block;
+          color: #fff;
+        }
+        .welcome-text a:hover {
+          background: #fff;
+          color: #333;
+        }
+        /*resposive*/
+        
+        @media (max-width:600px) {
+          .wrapper {
+            width: 100%;
+          }
+          .logo {
+            float: none;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+          }
+          .welcome-text h1 {
+            font-size: 30px;
+          }
+        }
+      </style>
+
+<!-- about page start -->
+     <section id="about" style="height: 100vh; margin-left: 90px;" class="about">
+<section class="responsive-layout" style="display: flex; align-items: center; justify-content: center; padding: 20px;">
+  <div class="image-container" style="flex: 1; max-width: 50%;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnOlm41Qc0Mqs1SLJj18Sym-KKL2HfKSwNw&s" alt="Description" style="width: 600px; height: 400px;">
+  </div>
+  <div class="text-container" style="flex: 1; padding: 20px;">
+      <h2>About USA's Culture</h2>
+      <p>The culture of the USA is a mix of many different influences from around the world. People celebrate various
+         holidays, like Thanksgiving and Independence Day, and enjoy foods like hamburgers, Barbecue, and Apple pie. 
+         Music styles like jazz, rock, and hip-hop are popular, and movies from Hollywood are known worldwide. 
+         Americans value freedom and diversity, which means they respect different backgrounds and ideas. 
+         This creates a vibrant and exciting culture that changes all the time. Sports also play a big role in American
+          culture, with football, basketball, and baseball being hugely popular. Many people gather to watch games with 
+          family and friends, creating a strong sense of community.</p>
+  </div>
+</section>
+<p style="margin-left:20px; margin-right:20px;">Fast food is popular across the country, with chains like McDonald's and
+   Burger King serving burgers and fries. However, there’s also a growing trend towards healthier eating, with many 
+   people enjoying salads, smoothies, and organic foods.
+
+  Street food is a big part of American culture, too, with food trucks offering everything from tacos to gourmet cupcakes.
+   International cuisines are widely available, thanks to immigrants who have brought their traditional dishes, 
+   such as Chinese, Mexican, Italian, and Indian foods.</p>
+
+<style>
+  @media (max-width: 600px) {
+      .responsive-layout {
+          flex-direction: column;
+      }
+      .image-container, .text-container {
+          max-width: 100%; 
+      }
+  }
+</style>
+     </section> 
+
+
+<!-- quote section -->
+<section id="quote" style="padding-left: 70px;">
+    <center>
+        <div class="sentence">
+            <br><br><h1>Don't ask what your culture can do for you — ask what you can do for your culture <br> <span style="font-size: 15px;  margin-top:-17px;">- Arham Shah</span></h1>
+        </div>
+    </center>
+</section>
+
+<!-- food page start -->
+     <section id="food" style="height: 100%; padding-left: 78px" class="foods">
+        <br><center><div class="banner">
+            <img src="images/Screenshot 2024-09-06 135242.png" style="width:80%; height: 300px;">
+        </div></center><br>
+        <center><div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                ←
+              </button>
+              <ul class="image-list">
+                <!-- image 1 -->
+                <div class="image">
+                    <img class="image__img" src="https://cdn.pixabay.com/photo/2020/10/05/19/55/hamburger-5630646_640.jpg" alt="Burgers">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Hamburgers</div>
+                        <p class="image__description">Hamurgers</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">The hamburger is a quintessential American icon, embodying convenience, comfort, and cultural identity.</p>
+                    </div>
+                </div>
+                
+                <!-- image 2 -->
+                <div class="image">
+                    <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5t8BUPoyQfwQHm9DNzzd0gJC53ptcayYYMg&s" alt="Apple Pie">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Apple Pie</div>
+                        <p class="image__description">Apple Pie</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">Apple pie is a symbol of American tradition and nostalgia, epitomizing the country's heritage and the concept of "home."</p>
+                    </div>
+                </div>
+                
+                <!-- Image 3 -->
+                <div class="image">
+                    <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtIk1dirjiumsZVMP-j7dupIZSBrT1T-uyg&s" alt="Barbeque">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Bricks</div>
+                        <p class="image__description">Barbeque</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">
+                            Barbecue is a cherished cuisine in the USA because it embodies regional pride, communal gatherings, and a rich tradition of slow-cooked, flavorful meats.</p>
+                    </div>
+                </div>
+                
+                <!-- Image 4 -->
+                <div class="image">
+                    <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScdOk60kIeMkHPr2Cy4Vife6nXldrxbDyldQ&s" alt="Reuben sandwich">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Reuben sandwich</div>
+                        <p class="image__description">Reuben sandwich</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">The Reuben sandwich symbolizes America's cultural melting pot by blending diverse culinary traditions into a beloved comfort food staple.</p>
+                    </div>
+                </div>
+                
+                <!-- Image 5 -->
+                <div class="image">
+                    <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrB6RxmaRBDm4hwoA8354FS8rdkdwQFFWaWA&s" alt="Hot God">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Hot God</div>
+                        <p class="image__description">Hot Dog</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">The hot dog epitomizes American culture as a quintessential symbol of casual dining, sporting events, and street food tradition.</p>
+                    </div>
+                </div>
+                
+                <!-- Image 6 -->
+                <div class="image">
+                    <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbjeGupzGgyFi5T1PI9-LF7AgrkB9mM-h4CRQ6CR4L09Xsc3_NOk4Z8GiPcMx3JEXmIxE&usqp=CAU" alt="Biscuits and gravy">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Biscuits and gravy</div>
+                        <p class="image__description">
+                            Biscuits and gravy</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">Biscuits and gravy represent the heart of Southern comfort food, showcasing the region's culinary traditions and hospitality.</p>
+                    </div>
+                </div>
+                
+                <!-- Image 7 -->
+                <div class="image">
+                    <img class="image__img" src="data:image/jpeg;base64,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" alt="Meatloaf">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Meatloaf</div>
+                        <p class="image__description">Meatloaf</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">Meatloaf symbolizes American comfort food tradition and theatrical rock performance, representing both homey, practical meals and dramatic, enduring music.</p>
+                    </div>
+                </div>
+                
+                <!-- Image 8 -->
+                <div class="image">
+                    <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP_QYjcGE-DMcoRb0x1A2LQix9FZBAUc8lMQ&s" alt="Grits">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Grits</div>
+                        <p class="image__description">Grits</p>
+                        <p class="image__description" style="font-size: 15px; width: 80%;">Grits embody Southern American comfort food, reflecting regional culinary traditions and the enduring appeal of simple, hearty dishes.</p>
+                    </div>
+                </div>
+                
+
+    <style>
+        .image {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .image__img {
+            display: block;
+            width: 100%;
+            height: 300px;
+        }
+        
+        .image__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        
+        .image__overlay--blur {
+            backdrop-filter: blur(5px);
+        }
+        
+        .image__overlay--primary {
+            background: #009578;
+        }
+        
+        .image__overlay>* {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+        
+        .image__overlay:hover {
+            opacity: 1;
+        }
+        
+        .image__overlay:hover>* {
+            transform: translateY(0);
+        }
+        
+        .image__title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .image__description {
+            font-size: 40px;
+        }
+    </style>
+ </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                →
+              </button>
+              <br><br>
+            </div>
+            <div class="slider-scrollbar" style="margin-top: -25px;">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div></center>
+    <script>
+        const initSlider = () => {
+            const imageList = document.querySelector(".slider-wrapper .image-list");
+            const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+            const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+            const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+            const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+            
+            // Handle scrollbar thumb drag
+            scrollbarThumb.addEventListener("mousedown", (e) => {
+                const startX = e.clientX;
+                const thumbPosition = scrollbarThumb.offsetLeft;
+                const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+                
+                // Update thumb position on mouse move
+                const handleMouseMove = (e) => {
+                    const deltaX = e.clientX - startX;
+                    const newThumbPosition = thumbPosition + deltaX;
+                    // Ensure the scrollbar thumb stays within bounds
+                    const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+                    const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+                    
+                    scrollbarThumb.style.left = `${boundedPosition}px`;
+                    imageList.scrollLeft = scrollPosition;
+                }
+                // Remove event listeners on mouse up
+                const handleMouseUp = () => {
+                    document.removeEventListener("mousemove", handleMouseMove);
+                    document.removeEventListener("mouseup", handleMouseUp);
+                }
+                // Add event listeners for drag interaction
+                document.addEventListener("mousemove", handleMouseMove);
+                document.addEventListener("mouseup", handleMouseUp);
+            });
+            // Slide images according to the slide button clicks
+            slideButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const direction = button.id === "prev-slide" ? -1 : 1;
+                    const scrollAmount = imageList.clientWidth * direction;
+                    imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                });
+            });
+             // Show or hide slide buttons based on scroll position
+            const handleSlideButtons = () => {
+                slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+                slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+            }
+            // Update scrollbar thumb position based on image scroll
+            const updateScrollThumbPosition = () => {
+                const scrollPosition = imageList.scrollLeft;
+                const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+                scrollbarThumb.style.left = `${thumbPosition}px`;
+            }
+            // Call these two functions when image list scrolls
+            imageList.addEventListener("scroll", () => {
+                updateScrollThumbPosition();
+                handleSlideButtons();
+            });
+        }
+        window.addEventListener("resize", initSlider);
+        window.addEventListener("load", initSlider);
+    </script>
+     </section>
+<hr>
+<!-- problem page start -->
+     <section id="problem" style="height: 100vh;" class="problem">
+<section id="new-page" style="padding: 20px;">
+    <div class="banner" style="text-align: center; margin: 20px 0;">
+        <img src="https://img.freepik.com/free-vector/global-problems-cartoon-web-banner_107791-6969.jpg" alt="Banner" style="width: 80%; height: 200px; border: 1px sold black;">
+    </div>
+    <div class="responsive-layout" style="display: flex; justify-content: center;">
+        <div class="image-container" style="flex: 1; max-width: 50%; padding: 10px;">
+            <img src="https://media.bizj.us/view/img/10245168/howtoproblemsolving*900xx2223-1250-0-290.jpg" alt="Description" style="width: 100%; height: 400px;">
+        </div>
+        <div class="text-container" style="flex: 1; padding: 10px;">
+            <h2>Problems</h2>
+            <p style="font-size: 25px;">Students who travel to the USA and other countries for their studies often face several challenges. These include feelings of loneliness, adapting to a new and unfamiliar culture, and the struggle to build a social network in a foreign environment. Many students find it difficult to find companions or establish meaningful connections, which can lead to isolation. Additionally, they may encounter cultural differences and language barriers that further complicate their ability to integrate and feel at home in their new surroundings. These challenges can impact their mental health and overall experience abroad.</p>
+        </div>
+    </div>
+</section>
+     </section>
+<hr>
+<!-- solution page start -->
+    <section id="solution" style="height: 100vh;" class="solution">
+        <section id="problem" style="height: 100vh;" class="problem">
+    <section id="new-page" style="padding: 20px;">
+        <div class="banner" style="text-align: center; margin: 20px 0;">
+            <img src="https://st2.depositphotos.com/3643473/8095/i/950/depositphotos_80950658-stock-photo-person-with-word-solution.jpg" alt="Banner" style="width: 80%; height: 200px; border: 1px sold black;">
+        </div>
+        <div class="responsive-layout" style="display: flex; justify-content: center;">
+            <div class="image-container" style="flex: 1; max-width: 50%; padding: 10px;">
+                <img src="https://media.bizj.us/view/img/10245168/howtoproblemsolving*900xx2223-1250-0-290.jpg" alt="Description" style="width: 100%; height: 400px;">
+            </div>
+            <div class="text-container" style="flex: 1; padding: 10px;">
+                <h2>Solutions</h2>
+                <p style="font-size: 25px;">To help students overcome challenges while studying abroad, they can join student organizations and clubs to build a sense of community and make friends. Attending orientation programs and using university resources, such as counseling services and mentorship programs, can provide valuable support. Engaging in cultural exchanges, building a support network both on and off-campus, and volunteering in the local community can also help students feel more connected and reduce feelings of isolation.</p>
+            </div>
+        </div>
+    </section>
+         </section>
+    <hr>
+    </section>
+<hr>
+
+<!-- quiz page start -->
+<section class="quiz" id="quiz" style="width: 100%; padding-left: 55px;">
+  <br><br><br><br><br>
+  <div>
+      <body onload="NextQuestion(0)">
+      <main>
+          <div class="modal-container" id="score-modal">
+  
+              <div class="modal-content-container">
+  
+                  <h1>Congratulations, Quiz Completed.</h1>
+  
+                  <div class="grade-details">
+                      <p>Attempts : 10</p>
+                      <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                      <p>Right Answers : <span id="right-answers"></span></p>
+                      <p>Grade : <span id="grade-percentage"></span>%</p>
+                      <p ><span id="remarks"></span></p>
+                  </div>
+  
+                  <div class="modal-button-container">
+                      <button onclick="closeScoreModal()">Continue</button>
+                  </div>
+  
+              </div>
+          </div>
+          <div class="game-quiz-container">
+  
+              <div class="game-details-container">
+                  <h1>Score : <span id="player-score"></span> / 10</h1>
+                  <h1> Question : <span id="question-number"></span> / 10</h1>
+              </div>
+  
+              <div class="game-question-container">
+                  <h1 id="display-question"></h1>
+              </div>
+  
+              <div class="game-options-container">
+  
+                 <div class="modal-container" id="option-modal">
+  
+                      <div class="modal-content-container">
+                           <h1>Please Pick An Option</h1>
+  
+                           <div class="modal-button-container">
+                              <button onclick="closeOptionModal()">Continue</button>
+                          </div>
+  
+                      </div>
+  
+                 </div>
+  
+                  <span>
+                      <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                      <label for="option-one" class="option" id="option-one-label"></label>
+                  </span>
+  
+  
+                  <span>
+                      <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                      <label for="option-two" class="option" id="option-two-label"></label>
+                  </span>
+  
+  
+                  <span>
+                      <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                      <label for="option-three" class="option" id="option-three-label"></label>
+                  </span>
+  
+  
+                  <span>
+                      <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                      <label for="option-four" class="option" id="option-four-label"></label>
+                  </span>
+  
+  
+              </div>
+  
+              <div class="next-button-container">
+                  <button onclick="handleNextQuestion()">Next Question</button>
+              </div>
+  
+          </div>
+      </div>
+  </div>
+  </section>  
+  <script>
+      const questions = [
+      {
+          question: "What is the most eaten food in USA's culture",
+          optionA: "Soups",
+          optionB: "Sandwich",
+          optionC: "Pizza",
+          optionD: "Hamburger",
+          correctOption: "optionD"
+      },
+  
+      {
+          question: "What is Image generation ?",
+          optionA: "10 players",
+          optionB: "Could generate image on prompt",
+          optionC: "9 players",
+          optionD: "12 players",
+          correctOption: "optionB"    
+      },
+  
+      {
+          question: "What is text/speech Generation ?",
+          optionA: "Donald Trump",
+          optionB: "Barack Obama",
+          optionC: "Abraham Lincoln",
+          optionD: "Can generate and recognize on what we say",
+          correctOption: "optionD"
+      },
+  
+      {
+          question: "What Is face Recognition ?",
+          optionA: "January",
+          optionB: "December",
+          optionC: "June",
+          optionD: "july",
+          correctOption: "optionC"
+      },
+  
+      {
+          question: "What is the functions of GEN AI ?",
+          optionA: "30 hours",
+          optionB: "38 hours",
+          optionC: "48 hours",
+          optionD: "24 hours",
+          correctOption: "optionD"
+      },
+  
+      {
+          question: "What is GEN AI also called as ?",
+          optionA: "Generative AI",
+          optionB: "Geography AI",
+          optionC: "Google AI",
+          optionD: "Graphics AI",
+          correctOption: "optionA"
+      },
+  
+      {
+          question: "What is one of the use of GEN AI",
+          optionA: "Oceania",
+          optionB: "Antarctica",
+          optionC: "Automating solutions using prompt",
+          optionD: "North America",
+          correctOption: "optionC"
+      },
+  
+      {
+          question: "Could Gen AI make a product itself ?",
+          optionA: "Yes! If a prompt is given",
+          optionB: "Yes! Could generate without prompt",
+          optionC: "Maybe",
+          optionD: "No",
+          correctOption: "optionA"
+      },
+  
+      {
+          question: "Which of these numbers is an odd number ?",
+          optionA: "Ten",
+          optionB: "Twelve",
+          optionC: "Eight",
+          optionD: "Eleven",
+          correctOption: "optionD"
+      },
+  
+      {
+          question: `"You Can't see me" is a popular saying by`,
+          optionA: "Eminem",
+          optionB: "Bill Gates",
+          optionC: "Chris Brown",
+          optionD: "John Cena",
+          correctOption: "optionD"
+      },
+  
+  ]
+  
+  
+  let shuffledQuestions = [] 
+  function handleQuestions() {
+      while (shuffledQuestions.length <= 9) {
+          const random = questions[Math.floor(Math.random() * questions.length)]
+          if (!shuffledQuestions.includes(random)) {
+              shuffledQuestions.push(random)
+          }
+      }
+  }
+  
+  
+  let questionNumber = 1 
+  let playerScore = 0 
+  let wrongAttempt = 0 
+  let indexNumber = 0 
+  
+  function NextQuestion(index) {
+      handleQuestions()
+      const currentQuestion = shuffledQuestions[index]
+      document.getElementById("question-number").innerHTML = questionNumber
+      document.getElementById("player-score").innerHTML = playerScore
+      document.getElementById("display-question").innerHTML = currentQuestion.question;
+      document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
+      document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
+      document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
+      document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
+  
+  }
+  
+  
+  function checkForAnswer() {
+      const currentQuestion = shuffledQuestions[indexNumber] 
+      const currentQuestionAnswer = currentQuestion.correctOption 
+      const options = document.getElementsByName("option"); 
+      let correctOption = null
+  
+      options.forEach((option) => {
+          if (option.value === currentQuestionAnswer) {
+              correctOption = option.labels[0].id
+          }
+      })
+  
+      if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
+          document.getElementById('option-modal').style.display = "flex"
+      }
+  
+      options.forEach((option) => {
+          if (option.checked === true && option.value === currentQuestionAnswer) {
+              document.getElementById(correctOption).style.backgroundColor = "green"
+              playerScore++ 
+              indexNumber++ 
+              setTimeout(() => {
+                  questionNumber++
+              }, 1000)
+          }
+  
+          else if (option.checked && option.value !== currentQuestionAnswer) {
+              const wrongLabelId = option.labels[0].id
+              document.getElementById(wrongLabelId).style.backgroundColor = "red"
+              document.getElementById(correctOption).style.backgroundColor = "green"
+              wrongAttempt++ //adds 1 to wrong attempts 
+              indexNumber++
+              //set to delay question number till when next question loads
+              setTimeout(() => {
+                  questionNumber++
+              }, 1000)
+          }
+      })
+  }
+  
+  
+  
+  function handleNextQuestion() {
+      checkForAnswer() 
+      unCheckRadioButtons()
+     
+      setTimeout(() => {
+          if (indexNumber <= 9) {
+              NextQuestion(indexNumber)
+          }
+          else {
+              handleEndGame()
+          }
+          resetOptionBackground()
+      }, 1000);
+  }
+  
+  function resetOptionBackground() {
+      const options = document.getElementsByName("option");
+      options.forEach((option) => {
+          document.getElementById(option.labels[0].id).style.backgroundColor = ""
+      })
+  }
+  
+  function unCheckRadioButtons() {
+      const options = document.getElementsByName("option");
+      for (let i = 0; i < options.length; i++) {
+          options[i].checked = false;
+      }
+  }
+  
+  function handleEndGame() {
+      let remark = null
+      let remarkColor = null
+  
+      if (playerScore <= 3) {
+          remark = "Bad Grades, Keep Practicing."
+          remarkColor = "red"
+      }
+      else if (playerScore >= 4 && playerScore < 7) {
+          remark = "Average Grades, You can do better."
+          remarkColor = "orange"
+      }
+      else if (playerScore >= 7) {
+          remark = "Excellent, Keep the good work going."
+          remarkColor = "green"
+      }
+      const playerGrade = (playerScore / 10) * 100
+  
+      //data to display to score board
+      document.getElementById('remarks').innerHTML = remark
+      document.getElementById('remarks').style.color = remarkColor
+      document.getElementById('grade-percentage').innerHTML = playerGrade
+      document.getElementById('wrong-answers').innerHTML = wrongAttempt
+      document.getElementById('right-answers').innerHTML = playerScore
+      document.getElementById('score-modal').style.display = "flex"
+  
+  }
+  
+  function closeScoreModal() {
+      questionNumber = 1
+      playerScore = 0
+      wrongAttempt = 0
+      indexNumber = 0
+      shuffledQuestions = []
+      NextQuestion(indexNumber)
+      document.getElementById('score-modal').style.display = "none"
+  }
+  
+  
+  function closeOptionModal() {
+      document.getElementById('option-modal').style.display = "none"
+  }
+  </script>
+  </div>
+  
+</body>
+</html>
